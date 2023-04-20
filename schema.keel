@@ -61,6 +61,5 @@ api Web {
     models {
         Todo
         Project
-        
     }
 }
