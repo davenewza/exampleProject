@@ -2,7 +2,7 @@ import { SetCompletion, Todo } from "@teamkeel/sdk";
 
 export default SetCompletion(async (inputs, api, ctx) => {
   const now = new Date();
-
+  
   const todo = await api.models.todo.findOne(inputs.where);
 
   if (todo && todo.ownerId == ctx.identity?.id) {
