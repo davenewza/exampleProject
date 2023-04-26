@@ -9,7 +9,7 @@ model Todo {
     }
 
     operations {
-        get todo(id)
+        get getTodo(id)
         list allTodos(complete?, project.id?) {
             @where(todo.owner == ctx.identity)
         }
